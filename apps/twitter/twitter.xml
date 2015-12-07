@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+	<form id="twitter-form">
+		<span id="twitter-error" style="color: red;"></span>
+		<label>Username : <input id="twitter-form-username" name="username" type="text" style="width: 9em;" /></label>
+		<button>View</button>
+	</form>
+
+	<img id="twitter-avatar" style="width: 32px; height: 32px;" />
+	<ul id="twitter-timeline" style="margin: 0; background-color: transparent; overflow: auto; height: 80%;"></ul>
+
+	<script type="text/javascript">
+		<![CDATA[
+		function displayTimeline(tweets) {
+			if(tweets.length == 0) {
+				displayMessage('No tweet for ' + document.getElementById('twitter-form-username').value);
+				return;
+			}
+			document.getElementById('twitter-avatar').setAttribute('src', tweets[0].user.profile_image_url);
+			var timeline = document.getElementById('twitter-timeline');
+			var end = tweets.length < 5 ? tweets.length : 5;
+			while(timeline.hasChildNodes()) {
+				timeline.removeChild(timeline.firstChild);
+			}
+			for(var i = 0; i <= end; i++) {
+				var li = document.createElement('li');
+				li.style.backgroundColor = '#7195c1';
+				li.style.marginTop = '5px';
+				li.style.padding = '5px';
+				li.style.MozBorderRadius = '5px;';
+				li.textContent = tweets[i].text;
+				timeline.appendChild(li);
+			}
+			var script = document.getElementById('twitter-script')
+			script.parentNode.removeChild(script);
+		}
+
+		document.getElementById('twitter-form').addEventListener(
+			'submit',
+			function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				var username = document.getElementById('twitter-form-username').value;
+				if(username == '') {
+					username.className = 'error';
+					document.getElementById('twitter-error').textContent = 'Username is required!';
+				}
+				else {
+					username.className = '';
+					document.getElementById('login-error').textContent = '';
+					var script = document.createElement('script');
+					script.setAttribute('id', 'twitter-script');
+					script.setAttribute('src', 'https://api.twitter.com/1/statuses/user_timeline/ ' + username + '.json?callback=displayTimeline');
+					document.getElementsByTagName('head')[0].appendChild(script);
+				}
+		}, true);
+		]]>
+    </script>
+</div>

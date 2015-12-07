@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--<!DOCTYPE space SYSTEM "webdesktop.dtd">-->
+<?xml-stylesheet type="text/xsl" href="webdesktop.xsl"?>
+
+<space xmlns:h="http://www.w3.org/1999/xhtml">
+	<menus>
+		<menu id="media">Media</menu>
+		<menu id="social">Social</menu>
+		<menu id="other">Other</menu>
+	</menus>
+	<apps>
+		<app id="music_player">
+			<title>Music Player</title>
+			<icon>design/icons/music.png</icon>
+			<category>media</category>
+			<description>Music player</description>
+			<source>music_player.xml</source>
+			<xaxis>600</xaxis>
+			<yaxis>200</yaxis>
+			<width>300</width>
+			<height>130</height>
+			<resizable>false</resizable>
+		</app>
+		<app id="flash_music_player">
+			<title>Flash Music Player</title>
+			<icon>design/social/ilike_16.png</icon>
+			<category>media</category>
+			<description>Flash Music player</description>
+			<source>flash_music_player.xml</source>
+			<xaxis>600</xaxis>
+			<yaxis>200</yaxis>
+			<width>300</width>
+			<height>100</height>
+			<resizable>false</resizable>
+		</app>
+		<app id="video_player">
+			<title>Video Player</title>
+			<icon>design/icons/film.png</icon>
+			<category>media</category>
+			<description>Video player</description>
+			<source>video_player.xml</source>
+			<xaxis>600</xaxis>
+			<yaxis>200</yaxis>
+			<width>500</width>
+			<height>300</height>
+			<resizable>true</resizable>
+		</app>
+		<app id="wave">
+			<title>Wave</title>
+			<icon>design/social/google_wave_16.png</icon>
+			<category>application</category>
+			<description>Wave</description>
+			<source>wave.xml</source>
+			<xaxis>600</xaxis>
+			<yaxis>200</yaxis>
+			<width>600</width>
+			<height>450</height>
+			<resizable>true</resizable>
+		</app>
+		<app id="twitter">
+			<title>Twitter</title>
+			<icon>design/social/twitter_16.png</icon>
+			<category>social</category>
+			<description>Twitter</description>
+			<source>twitter.xml</source>
+			<source></source>
+			<xaxis>600</xaxis>
+			<yaxis>100</yaxis>
+			<width>300</width>
+			<height>500</height>
+			<resizable>true</resizable>
+		</app>
+		<app id="chat">
+			<title>Chat</title>
+			<icon>design/icons/comments.png</icon>
+			<category>social</category>
+			<description>Instant messaging</description>
+			<source>chat.xml</source>
+			<xaxis>150</xaxis>
+			<yaxis>150</yaxis>
+			<width>300</width>
+			<height>500</height>
+			<resizable>true</resizable>
+		</app>
+		<app id="rss_reader">
+			<title>RSS</title>
+			<icon>design/icons/rss.png</icon>
+			<category>other</category>
+			<description>RSS reader</description>
+			<source>rss_reader.xml</source>
+			<xaxis>600</xaxis>
+			<yaxis>200</yaxis>
+			<width>250</width>
+			<height>500</height>
+			<resizable>true</resizable>
+		</app>
+		<app id="favorites">
+			<title>Favorites</title>
+			<icon>design/icons/page_link.png</icon>
+			<category>other</category>
+			<description>Favorites links</description>
+			<content>
+				<h:a href="http://www.matco.name">Matco.name</h:a><h:br />
+				<h:a href="http://www.xkcd.com">XKCD</h:a><h:br />
+				<h:a href="http://geekandpoke.typepad.com">Geek &amp; Poke</h:a><h:br />
+				<h:script type="text/javascript">
+					<![CDATA[
+						//alert('directory loaded')
+					]]>
+				</h:script>
+			</content>
+			<xaxis>500</xaxis>
+			<yaxis>150</yaxis>
+			<width>250</width>
+			<height>120</height>
+			<resizable>true</resizable>
+		</app>
+		<app id="map_v1">
+			<title>Map v1</title>
+			<icon>design/icons/map.png</icon>
+			<category>other</category>
+			<description>GoogleMaps iFrame</description>
+			<source>iframe_map.xml</source>
+			<xaxis>500</xaxis>
+			<yaxis>150</yaxis>
+			<width>450</width>
+			<height>450</height>
+			<resizable>true</resizable>
+		</app>
+		<app id="map_v2">
+			<title>Map v2</title>
+			<icon>design/icons/map.png</icon>
+			<category>other</category>
+			<description>GoogleMaps JS</description>
+			<source>map.xml</source>
+			<xaxis>500</xaxis>
+			<yaxis>150</yaxis>
+			<width>450</width>
+			<height>450</height>
+			<resizable>true</resizable>
+		</app>
+	</apps>
+</space>

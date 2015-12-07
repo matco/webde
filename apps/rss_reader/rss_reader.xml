@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+
+	<form id="rss-form">
+		<label>URL : <input name="url" type="text" style="width: 9em;" /></label>
+		<button>Fetch</button>
+	</form>
+
+	<div id="stream"></div>
+
+	<script id="script" type="text/javascript">
+		document.getElementById('rss-form').addEventListener(
+			'submit',
+			function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				//load xsl
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET','apps/rss_reader/rss_reader.xsl', false);
+				xhr.send();
+				var xsl = xhr.responseXML;
+				//create xsl processor
+				var processor = new XSLTProcessor();
+				processor.importStylesheet(xsl);
+				//load xml
+				xhr.open('GET', this['url'].value, false);
+				xhr.send();
+				var xml = xhr.responseXML;
+				//processing
+				var fragment = processeur.transformToFragment(xml, document);
+				alert(fragment);
+				document.getElementById('stream').appendChild(fragment);
+			}
+		);
+	</script>
+</div>

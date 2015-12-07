@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+	<form id="message-form">
+		<label>Message : <input id="message-form-message" name="message" type="text" style="width: 9em;" /></label>
+		<input type="submit" class="bouton" value="Send" />
+	</form>
+
+	<div id="messages"></div>
+
+	<script id="script" type="text/javascript">
+		<![CDATA[
+		document.getElementById('message-form').addEventListener(
+			'submit',
+			function(event) {
+				if(document.getElementById('message-form-message').value == '') {
+					displayMessage('Message is required');
+				}
+				else {
+					document.getElementById('messages').parentNode.parentNode.startLoading();
+					requete(
+						'apps/chat/chat.php', 
+						'post', 
+						'pseudo=' + Config.username + '&message=' + document.getElementById('message-form-message').value,
+						'xml',
+						displayMessages,
+						'');
+					document.getElementById('message-form-message').value = '';
+				}
+				event.preventDefault();
+				event.stopPropagation();
+			},
+			true);
+
+		function displayMessages(source, resultat) {
+			var messages = document.getElementById('messages');
+			while(messages.hasChildNodes()) {
+				messages.removeChild(messages.firstChild);
+			}
+			var content = document.importNode(resultat.documentElement, true);
+			messages.appendChild(content.firstChild);
+			Tooltip.initNode(messages);
+			messages.parentNode.parentNode.stopLoading();
+		}
+
+		function refresh() {
+			document.getElementById('messages').parentNode.parentNode.startLoading();
+			requete(
+				'apps/chat/chat.php',
+				'get',
+				'',
+				'xml',
+				displayMessages,
+				'');
+			setTimeout(refresh, 10000);
+		}
+
+		refresh();
+		]]>
+	</script>
+</div>

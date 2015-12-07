@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+	<div id="map" style="width: 100%; height: 90%;"></div>
+
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	<!--<script src="http://www.google.com/jsapi?key=ABQIAAAAjTWBtqIiKSCos0kptM3oWRRkUYzaZ91fr4X7Oh6zYqJ4cZKaFRQX2vzoEt0ORrgIdXuCxTesMimdMg" type="text/javascript"></script>-->
+	<script type="text/javascript">
+		<![CDATA[
+		/*function initialize() {
+			var options = {
+				zoom: 6,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById('map'), options);
+
+			navigator.geolocation.getCurrentPosition(function(position) {
+				initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+				map.setCenter(initialLocation);
+			});
+		}*/
+
+		//initialize();
+		//google.setOnLoadCallback(initialize);
+
+		//google.load('maps', '3', {'language' : 'en', 'other_params' : 'sensor=false'});
+		]]>
+	</script>
+</div>

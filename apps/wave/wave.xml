@@ -1,0 +1,20 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+	<div id="waveframe"></div>
+	<script type="text/javascript" src="http://wave-api.appspot.com/public/embed.js"></script>
+	<script type="text/javascript">
+		<![CDATA[
+		var uiConfig = new WavePanel.UIConfig();
+		uiConfig.setFooterEnabled(true);
+		uiConfig.setHeaderEnabled(true);
+		uiConfig.setToolbarEnabled(true);
+		uiConfig.setBgcolor('#FFF');
+		uiConfig.setColor('#000');
+		uiConfig.setFont('verdana');
+		uiConfig.setFontSize('10px');
+		var wavePanel = new WavePanel('http://wave.google.com/wave/');
+		wavePanel.setUIConfigObject(uiConfig)
+		wavePanel.loadWave('googlewave.com!w+-rVyDeLOC.1'); // This is where we specify the server type and wave ID
+		wavePanel.init(document.getElementById('waveframe'));
+		]]>
+    </script>
+</div>

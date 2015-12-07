@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<!ELEMENT space (menus, apps)>
+
+<!ELEMENT menus (menu)+>
+<!ATTLIST menu 
+	id ID #REQUIRED>
+<!ELEMENT menu (#PCDATA)>
+
+<!ELEMENT apps (app)+>
+<!ATTLIST app 
+	id ID #REQUIRED>
+<!ELEMENT app (title,icon,category,description,source?,content?,xaxis,yaxis,width,height,resizable)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT icon (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT content ANY>
+<!ELEMENT xaxis (#PCDATA)>
+<!ELEMENT yaxis (#PCDATA)>
+<!ELEMENT width (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT resizable (#PCDATA)>

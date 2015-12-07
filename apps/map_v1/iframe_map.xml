@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+	<iframe
+		width="100%"
+		height="90%"
+		frameborder="0"
+		scrolling="no"
+		marginheight="0"
+		marginwidth="0"
+		src="http://maps.google.fr/maps?hl=en&amp;q=&amp;ie=UTF8&amp;z=12&amp;om=1&amp;ll=45.899624,6.128454&amp;output=embed&amp;s=AARTsJr2D1Ger3KRQPUsgWHkUpXWAEzlDQ" />
+	<br />
+	<small style="height: 10%">
+		<a
+			href="http://maps.google.fr/maps?hl=en&amp;q=&amp;ie=UTF8&amp;z=12&amp;om=1&amp;ll=45.899624,6.128454&amp;source=embed"
+			style="color:#0000FF;text-align:left">Maximize</a>
+	</small>
+</div>
