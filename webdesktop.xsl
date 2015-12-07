@@ -64,7 +64,7 @@
 						</li>
 						<!--logout-->
 						<li style="float: right; width: 50px;">
-							<img id="logout" tooltip="logout-infos" src="/design/images/close.png" style="margin: 2px 5px;" />
+							<img id="logout" tooltip="logout-infos" src="design/images/close.png" style="margin: 2px 5px;" />
 							<p id="logout-infos" class="tooltip">Click to logout</p>
 						</li>
 						<!--user-->
@@ -92,7 +92,7 @@
 					</div>
 
 					<!--loading-->
-					<img id="loading" src="/design/images/loading.png" />
+					<img id="loading" src="design/images/loading.png" />
 
 					<!--thumbnails container-->
 					<div id="thumbnails"></div>
@@ -118,7 +118,7 @@
 				<div id="options" style="background-color: #f5f5ff;">
 					<h2>
 						Options
-						<img id="options-close" src="/design/images/close.png" class="minibutton" />
+						<img id="options-close" src="design/images/close.png" class="minibutton" />
 					</h2>
 					<div class="content">
 						<form id="options-form">
@@ -178,10 +178,10 @@
 			<h2>
 				<img src="{icon}" class="minibutton" style="float: left; margin: 0 10px 0 0;" />
 				<xsl:value-of select="title"/>
-				<img src="/design/images/close.png" class="minibutton" />
-				<img src="/design/images/minimize.png" class="minibutton" /> 
-				<img src="/design/images/fold.png" class="minibutton" /> 
-				<img src="/design/images/loading.png" class="minibutton" style="height: 15px; display: none;" /> 
+				<img src="design/images/close.png" class="minibutton" />
+				<img src="design/images/minimize.png" class="minibutton" /> 
+				<img src="design/images/fold.png" class="minibutton" /> 
+				<img src="design/images/loading.png" class="minibutton" style="height: 15px; display: none;" /> 
 			</h2>
 			<div class="content">
 				<xsl:copy-of select="content"/>
