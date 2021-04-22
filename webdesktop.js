@@ -50,7 +50,7 @@ function initApps() {
 
 function initApp(element) {
 	element.ui = {};
-	element.ui.title = element.childNodes[0]; 
+	element.ui.title = element.childNodes[0];
 	element.ui.content = element.childNodes[1];
 	var icons = element.ui.title.querySelectorAll('img');
 	var i = 0;
@@ -206,14 +206,14 @@ function initApp(element) {
 		Resize.add(this);
 		this.style.height = this.oldHeight;
 		this.ui.content.style.display = 'block';
-		this.ui.fold.src = 'design/images/fold.png';
+		this.ui.fold.src = 'images/fold.png';
 	}
 	element.fold = function() {
 		this.oldHeight = this.style.height;
 		Resize.remove(this);
 		this.style.height = '';
 		this.ui.content.style.display = 'none';
-		this.ui.fold.src = 'design/images/unfold.png';
+		this.ui.fold.src = 'images/unfold.png';
 	}
 }
 

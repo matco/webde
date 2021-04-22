@@ -11,31 +11,31 @@
 	<apps>
 		<app id="music_player">
 			<title>Music Player</title>
-			<icon>design/icons/music.png</icon>
+			<icon>images/icons/music.png</icon>
 			<category>media</category>
 			<description>Music player</description>
 			<source>music_player.xml</source>
 			<xaxis>600</xaxis>
 			<yaxis>200</yaxis>
 			<width>300</width>
-			<height>130</height>
+			<height>150</height>
 			<resizable>false</resizable>
 		</app>
 		<app id="flash_music_player">
 			<title>Flash Music Player</title>
-			<icon>design/social/ilike_16.png</icon>
+			<icon>images/social/ilike_16.png</icon>
 			<category>media</category>
 			<description>Flash Music player</description>
 			<source>flash_music_player.xml</source>
 			<xaxis>600</xaxis>
 			<yaxis>200</yaxis>
-			<width>300</width>
-			<height>100</height>
+			<width>350</width>
+			<height>150</height>
 			<resizable>false</resizable>
 		</app>
 		<app id="video_player">
 			<title>Video Player</title>
-			<icon>design/icons/film.png</icon>
+			<icon>images/icons/film.png</icon>
 			<category>media</category>
 			<description>Video player</description>
 			<source>video_player.xml</source>
@@ -47,7 +47,7 @@
 		</app>
 		<app id="wave">
 			<title>Wave</title>
-			<icon>design/social/google_wave_16.png</icon>
+			<icon>images/social/google_wave_16.png</icon>
 			<category>application</category>
 			<description>Wave</description>
 			<source>wave.xml</source>
@@ -59,7 +59,7 @@
 		</app>
 		<app id="twitter">
 			<title>Twitter</title>
-			<icon>design/social/twitter_16.png</icon>
+			<icon>images/social/twitter_16.png</icon>
 			<category>social</category>
 			<description>Twitter</description>
 			<source>twitter.xml</source>
@@ -72,7 +72,7 @@
 		</app>
 		<app id="chat">
 			<title>Chat</title>
-			<icon>design/icons/comments.png</icon>
+			<icon>images/icons/comments.png</icon>
 			<category>social</category>
 			<description>Instant messaging</description>
 			<source>chat.xml</source>
@@ -84,7 +84,7 @@
 		</app>
 		<app id="rss_reader">
 			<title>RSS</title>
-			<icon>design/icons/rss.png</icon>
+			<icon>images/icons/rss.png</icon>
 			<category>other</category>
 			<description>RSS reader</description>
 			<source>rss_reader.xml</source>
@@ -96,7 +96,7 @@
 		</app>
 		<app id="favorites">
 			<title>Favorites</title>
-			<icon>design/icons/page_link.png</icon>
+			<icon>images/icons/page_link.png</icon>
 			<category>other</category>
 			<description>Favorites links</description>
 			<content>
@@ -112,12 +112,12 @@
 			<xaxis>500</xaxis>
 			<yaxis>150</yaxis>
 			<width>250</width>
-			<height>120</height>
+			<height>150</height>
 			<resizable>true</resizable>
 		</app>
 		<app id="map_v1">
 			<title>Map v1</title>
-			<icon>design/icons/map.png</icon>
+			<icon>images/icons/map.png</icon>
 			<category>other</category>
 			<description>GoogleMaps iFrame</description>
 			<source>iframe_map.xml</source>
@@ -129,7 +129,7 @@
 		</app>
 		<app id="map_v2">
 			<title>Map v2</title>
-			<icon>design/icons/map.png</icon>
+			<icon>images/icons/map.png</icon>
 			<category>other</category>
 			<description>GoogleMaps JS</description>
 			<source>map.xml</source>
