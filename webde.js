@@ -26,7 +26,7 @@ function initApps() {
 	window.apps = [];
 	//retrieve app list with synchronous xhr request
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'webdesktop.xml', false);
+	xhr.open('GET', 'applications.xml', false);
 	xhr.send();
 	var xml = xhr.responseXML;
 	var nodes = xml.evaluate('/space/apps/app', xml, null, XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null);

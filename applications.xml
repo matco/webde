@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!--<!DOCTYPE space SYSTEM "webdesktop.dtd">-->
-<?xml-stylesheet type="text/xsl" href="webdesktop.xsl"?>
+<!--<!DOCTYPE space SYSTEM "webde.dtd">-->
+<?xml-stylesheet type="text/xsl" href="webde.xsl"?>
 
 <space xmlns:h="http://www.w3.org/1999/xhtml">
 	<menus>

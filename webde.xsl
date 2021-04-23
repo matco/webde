@@ -19,11 +19,11 @@
 	<xsl:template match="/">
 		<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 			<head>
-				<title>Webdesktop</title>
+				<title>Webde</title>
 				<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 				<!--css inclusion-->
 				<link rel="stylesheet" type="text/css" href="global.css" />
-				<link rel="stylesheet" type="text/css" href="webdesktop.css" />
+				<link rel="stylesheet" type="text/css" href="webde.css" />
 				<!--javascript classes inclusion-->
 				<script type="text/javascript" src="js/classes/Autocomplete.class.js"></script>
 				<script type="text/javascript" src="js/classes/ScreenSaver.class.js"></script>
@@ -38,7 +38,7 @@
 				<script type="text/javascript" src="js/scripts/classement.script.js"></script>
 				<script type="text/javascript" src="js/scripts/effets.script.js"></script>
 				<script type="text/javascript" src="js/scripts/requete.script.js"></script>
-				<script type="text/javascript" src="webdesktop.js"></script>
+				<script type="text/javascript" src="webde.js"></script>
 			</head>
 			<body>
 				<div id="notification"></div>
