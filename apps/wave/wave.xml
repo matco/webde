@@ -16,5 +16,5 @@
 		wavePanel.loadWave('googlewave.com!w+-rVyDeLOC.1'); // This is where we specify the server type and wave ID
 		wavePanel.init(document.getElementById('waveframe'));
 		]]>
-    </script>
+	</script>
 </div>

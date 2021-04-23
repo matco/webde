@@ -4,7 +4,7 @@ var DateTime = {
 
 	displayTime : function(node) {
 		var date = new Date;
-		var hour = (date.getHours() < 10) ?  '0' + date.getHours() : date.getHours();
+		var hour = (date.getHours() < 10) ? '0' + date.getHours() : date.getHours();
 		var minutes = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes();
 		var seconds = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
 		//write time on node
@@ -73,4 +73,3 @@ var DateTime = {
 		node.textContent = text;
 	}
 }
-
