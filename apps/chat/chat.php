@@ -4,9 +4,9 @@ header('Content-type: application/xml');
 //load config files
 $config['db']['host'] = 'localhost';
 $config['db']['port'] = 3306;
-$config['db']['user'] = 'webdesktop';
-$config['db']['password'] = 'TwHtZqR457Zzp263';
-$config['db']['base'] = 'webdesktop';
+$config['db']['user'] = 'webde';
+$config['db']['password'] = 'password';
+$config['db']['base'] = 'webde';
 
 //sanity check of http parameters
 if($_POST) {
