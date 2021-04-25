@@ -32,32 +32,15 @@ p {
 	padding: 0.5rem 1rem;
 	text-align: justify;
 }
-pre {
-	margin: 0;
-	padding: 0 1rem 1rem 1rem;
-	overflow: auto;
-}
-time {
-	font-size: 0.8rem;
-}
 
 /***separators***/
 br {
 	margin-bottom: 0.6rem;
 }
-hr {
-	clear: both;
-	visibility: hidden;
-	margin: 0;
-	padding: 0;
-}
 
 /***images***/
 img {
-	vertical-align: middle;
-	border: 0;
-	margin: 0;
-	padding: 0;
+	vertical-align: sub;
 }
 
 /***titles***/
@@ -286,7 +269,7 @@ input[type='submit']:hover, button:hover, .button:hover {
 .minibutton {
 	opacity: 0.6;
 	float: right;
-	margin: 2px;
+	margin: 5px 2px;
 }
 .minibutton:hover {
 	opacity: 1;

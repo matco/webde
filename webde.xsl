@@ -160,7 +160,7 @@
 			<ul id="{$category}" class="submenu">
 				<xsl:for-each select="/space/apps/app[category=$category]">
 					<li link="{@id}" tooltip="{concat(@id,'-description')}">
-						<img src="{icon}" style="padding: 5px;" />
+						<img src="{icon}" style="margin-right: 5px;" />
 						<xsl:value-of select="title"/>
 					</li>
 					<p id="{concat(@id,'-description')}" class="tooltip"><xsl:value-of select="description"/></p>
@@ -174,7 +174,7 @@
 	<xsl:template match="app" mode="space">
 		<div id="{@id}" class="window" style="{concat('left: ',xaxis,'px; top: ',yaxis,'px; width: ',width,'px; height: ',height,'px;')}">
 			<h2>
-				<img src="{icon}" class="minibutton" style="float: left; margin: 0 10px 0 0;" />
+				<img src="{icon}" class="minibutton" style="float: left; margin: 5px 10px 0 0;" />
 				<xsl:value-of select="title"/>
 				<img src="images/close.png" class="minibutton" />
 				<img src="images/minimize.png" class="minibutton" />
