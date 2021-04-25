@@ -17,7 +17,7 @@
 			<source>music_player.xml</source>
 			<xaxis>600</xaxis>
 			<yaxis>200</yaxis>
-			<width>300</width>
+			<width>400</width>
 			<height>150</height>
 			<resizable>false</resizable>
 		</app>
