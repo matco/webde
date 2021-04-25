@@ -99,23 +99,6 @@ a:hover {
 	color: #7195c1;
 }
 
-/***tables***/
-table {
-	background-color: #fff;
-	border: 0;
-	margin: 0;
-	padding: 1rem;
-}
-tr {
-	border: 1px dotted #fff;
-}
-tr.even {
-	background-color: #eef9ff;
-}
-tr.odd {
-	background-color: #fff;
-}
-
 /***forms***/
 form {
 	background: #f5f5ff;
@@ -144,16 +127,6 @@ input.error {
 	border: 1px solid red;
 }
 
-form.fields label {
-	clear: both;
-	float: left;
-	width: 150px;
-	margin-top: 5px;
-}
-form.fields input {
-	margin-bottom: 5px;
-}
-
 /***buttons***/
 input[type='submit'], button, .button {
 	border-radius: 2px;
@@ -170,37 +143,6 @@ input[type='submit']:hover, button:hover, .button:hover {
 }
 
 /***content***/
-header {
-	margin: 0;
-	padding: 0;
-}
-main {
-	display: block; /* fix for all version of Internet Explorer that don't know tag main */
-	clear: both;
-	background-color: #f5f5ff;
-	border-bottom: 1px solid #627c99;
-	border-top: 0;
-	margin: 0;
-	padding: 0;
-}
-section {
-	margin-bottom: 2rem;
-}
-footer {
-	text-align: center;
-	color: #494949;
-	font-size: 0.6rem;
-	margin: 1rem 0 1rem 0;
-	padding: 0;
-}
-
-#accessibility {
-	margin-bottom: 10px;
-	float: left;
-}
-#accessibility * {
-	font-size: 0.6rem;
-}
 #notification {
 	position: fixed;
 	right: 50px;
@@ -217,46 +159,7 @@ footer {
 	text-align: left;
 }
 
-/***menu***/
-#menu {
-	margin: 1rem 0;
-}
-#menu > li {
-	float: left;
-	text-align: center;
-	margin: 0;
-	border-top: 5px solid #627c99;
-	opacity: 0.7;
-}
-#menu > li:hover {
-	border-color: #7195c1;
-}
-#menu > li.current {
-	border-color: #7195c1;
-	opacity: 1;
-}
-#menu > li > a {
-	font-size: 1.2rem;
-	color: #7195c1;
-	padding: 1rem;
-	text-decoration: none;
-}
-#menu > li.current > a {
-	pointer-events: none;
-	cursor: default;
-}
-
 /***generic***/
-.border {
-	background-color: #fff;
-	border: 1px dotted #8eb0db;
-	margin: 1rem 2rem;
-	padding: 0.5rem 1rem;
-}
-.debug {
-	border: 3px solid #2A4A70;
-	border-radius: 5px;
-}
 .tooltip {
 	display: none;
 	font-size: 0.8rem;
@@ -265,97 +168,4 @@ footer {
 	border: 1px dotted #8eb0db;
 	z-index: 10000;
 	padding: 5px;
-}
-#overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0.8;
-	z-index: 1000;
-	background-color: black;
-}
-.modal {
-	position: fixed;
-	display: none;
-	z-index: 1001;
-	background-color: #fff;
-	border: 5px solid #556B85;
-}
-
-@media (max-width: 700px) {
-	body {
-		padding: 0;
-		font-size: 90%;
-	}
-	nav {
-		float: left;
-		height: 100%;
-	}
-	nav:before {
-		background-image: url(../images/menu.png);
-		background-size: 50px 50px;
-		background-repeat: no-repeat;
-		width: 50px;
-		height: 50px;
-		display: block;
-		content: "";
-	}
-	h1 {
-		padding: 0.3rem 0;
-	}
-	main {
-		line-height: 1.5rem;
-	}
-	#menu {
-		position: fixed;
-		background-color: #0d131f;
-		background-image: repeating-linear-gradient(-45deg, transparent, transparent 3px, #1B252E 3px, #1B252E 4px);
-		height: 100%;
-		width: 80%;
-		top: 0;
-		left: -81%;
-		margin: 0;
-		border-right: 1px solid #7FA0C7;
-	}
-	/* transform horizontal menu in vertical menu */
-	#menu > li {
-		float: none;
-		background-color: #0d131f;
-		border: 0;
-		border-bottom: 1px solid #7FA0C7;
-		text-align: left;
-		opacity: 1;
-	}
-	#menu > li:hover {
-		background-color: #f5f5ff;
-	}
-	#menu > li.current {
-		background-color: #f5f5ff;
-	}
-	#menu > li > a {
-		display: block;
-		font-size: 1.8rem;
-		font-weight: bold;
-		padding: 0.5rem 1.5rem;
-	}
-
-	/***animations***/
-	@keyframes open {
-		from {
-			left: -82%;
-		}
-
-		to {
-			left: 0;
-		}
-	}
-
-	#menu.open {
-		left: 0;
-		animation-name: open;
-		animation-duration: 0.3s;
-		animation-timing-function: ease-in-out;
-	}
 }
