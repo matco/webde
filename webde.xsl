@@ -22,7 +22,6 @@
 				<title>Webde</title>
 				<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 				<!--css inclusion-->
-				<link rel="stylesheet" type="text/css" href="global.css" />
 				<link rel="stylesheet" type="text/css" href="webde.css" />
 				<!--javascript classes inclusion-->
 				<script type="text/javascript" src="js/classes/Autocomplete.class.js"></script>
