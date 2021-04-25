@@ -35,7 +35,6 @@
 				<script type="text/javascript" src="js/classes/Tooltip.class.js"></script>
 				<script type="text/javascript" src="js/classes/DateTime.class.js"></script>
 				<!--javascript scripts inclusion-->
-				<script type="text/javascript" src="js/scripts/classement.script.js"></script>
 				<script type="text/javascript" src="js/scripts/effets.script.js"></script>
 				<script type="text/javascript" src="js/scripts/requete.script.js"></script>
 				<script type="text/javascript" src="webde.js"></script>
